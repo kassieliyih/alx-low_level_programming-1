@@ -14,8 +14,8 @@ int main(void)
 		if (b == 'q' || b == 'e')
 			continue;
 		putchar(b);
-		putchar('\n');
 	}
+	putchar('\n');
 	return (0);
 
 }
