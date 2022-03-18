@@ -9,7 +9,7 @@ int main(void)
 {
 	int i;
 
-	printf("Infiniteloop incoming :\(\n");/* the errorr is here*/
+	printf("Infiniteloop incoming :(\n");
 
 	i = 0;
 
