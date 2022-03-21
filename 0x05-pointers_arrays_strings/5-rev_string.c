@@ -4,25 +4,16 @@
  * @s:string
  * Return:void
  */
-void _puts(char *str)
+void rev_string(char *s)
 {
-	char d[20];
-	int i = 0;
-	int j = 0;
 
-	for (j = 0; str[j] != '\0'; j++)
-	{
-		d[i] = str[i];
-		j++;
-	}
+	int len;
+	char cp[1024], *init = s;
 
-	j = j - 1;
-	while (j >= 0)
-	{
-		str[j] = d[i];
-		j--;
-		i++;
-	}
+	for (len = 0; *s != '\0' && (*s + 1) != '\0'; s++)
+		cp[len++] = *s;
 
-
+	s = init, len -= 1;
+	while (len >= 0)
+		*s++ = cp[len--];
 }
