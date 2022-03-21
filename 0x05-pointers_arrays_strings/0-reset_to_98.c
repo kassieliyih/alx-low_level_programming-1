@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *
- *
+ *reset_to_98 -  this the function to update the pointer
+ *@n:parameter for the function
  *
  *
  */
