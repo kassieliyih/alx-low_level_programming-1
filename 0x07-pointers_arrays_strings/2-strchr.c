@@ -9,7 +9,7 @@
 
 char *_strchar(char *s, char b)
 {
-	for (; *s != '\0'; s++)
+	for (; *s; ++s)
 		if (*s == b)
 		{
 			break;
