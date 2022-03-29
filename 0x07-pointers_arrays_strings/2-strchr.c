@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_strchar - function for strring
+ *_strchr - function for strring
  *@s:char
  *@b:char
  *Return:ff
