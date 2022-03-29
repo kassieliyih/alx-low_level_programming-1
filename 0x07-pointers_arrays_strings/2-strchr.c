@@ -7,7 +7,7 @@
  */
 
 
-char *_strchar(char *s, char b)
+char *_strchr(char *s, char b)
 {
 	for (; *s; ++s)
 		if (*s == b)
