@@ -9,10 +9,10 @@
 
 char *_strchar(char *s, char b)
 {
-	for (; *s != '\0'; ++s)
+	for (; *s != '\0'; s++)
 		if (*s == b)
 		{
-			return (s);
+			break;
 		}
-	return (NULL);
+	return (s);
 }
