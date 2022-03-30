@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *factorial -entry
+ *factorial - entry
  *@n:int
  *Return:int
  */
