@@ -8,7 +8,7 @@
  * Return:int
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 
 {
 	int mul;
@@ -19,7 +19,8 @@ int main(int argc, char* argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else{
+	else
+	{
 		x = atoi(argv[1]);
 		z = atoi(argv[2]);
 		mul = x * z;
