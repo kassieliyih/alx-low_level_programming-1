@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 			counter += q;
 			holder -= q * arra[i];
 		}
+		printf("%d\n", counter);
 	}
-	printf("%d\n", counter);
 	return (0);
 }
