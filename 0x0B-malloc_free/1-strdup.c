@@ -38,6 +38,6 @@ char *_strdup(char *str)
 			}
 		}
 	}
-	new[holder + 1] = '\0';
+	new[holder] = '\0';
 	return (new);
 }
