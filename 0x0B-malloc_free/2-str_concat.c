@@ -15,7 +15,11 @@ char *str_concat(char *s1, char *s2)
 	int j;
 	int holder1, holder2;
 	int total;
-
+	
+	if (s1 == NULL || s2 == NULL)
+	{
+		return (0);
+	}
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		continue;
@@ -30,6 +34,10 @@ char *str_concat(char *s1, char *s2)
 	total = holder1 + holder2;
 
 	new = malloc(sizeof(char) * total);
+	if (new == NULL)
+	{
+		return (0);
+	}
 
 	for (i = 0; s1[i] != '\0'; i++)
 	{
