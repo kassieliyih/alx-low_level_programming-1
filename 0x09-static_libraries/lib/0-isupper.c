@@ -1,22 +1,18 @@
 #include "main.h"
+
 /**
- *_memset - function for memory setting
- *@s:char
- *@b:char
- *@n:int
- *Return:char
+ *_isupper - this function
+ *@c:this is paramater for upper function
+ *Return:itn
  */
-
-char *_memset(char *s, char b, unsigned int n)
+int _isupper(int c)
 {
-	unsigned int i;
-
-	i = 0;
-	while (i < n)
+	if (c >= 65 && c <= 90)
 	{
-		s[i] = b;
-		i++;
+		return (1);
 	}
-	return (s);
+	else
+	{
+		return (0);
+	}
 }
-
