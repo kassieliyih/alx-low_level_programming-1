@@ -1,15 +1,23 @@
 #include "main.h"
-
 /**
- * _isdigit - is a function to return digit to 1 and 0 for other
- *@c: this a parameter for function
- *Return: dfgvc
+ *_memcpy - memory copy
+ *@dest:char
+ *@src:char
+ *@n:int
+ *Return:char
  *
  */
-int _isdigit(int c)
+
+
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	else
-		return (0);
+	unsigned int i;
+
+	i = 0;
+	while (i < n)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	return (dest);
 }
