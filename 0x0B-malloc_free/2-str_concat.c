@@ -6,48 +6,35 @@
  *@s2:char
  *Return:cha
  */
-
-
 char *str_concat(char *s1, char *s2)
 {
 	char *new;
-	int i;
-	int j;
-	int holder1, holder2;
-	int total;
-	
-	if (s1 == NULL || s2 == NULL)
-	{
-		return (0);
-	}
-	for (i = 0; s1[i] != '\0'; i++)
-	{
-		continue;
-	}
-	holder1 = i;
+	unsigned int i, j, holder1, holder2, total;
 
-	for (j = 0; s2[j] != '\0'; j++)
+	if (s1 == NULL)
+		holder1 = 0;
+	else
 	{
-		continue;
+		for (i = 0; s1[i] != '\0'; i++)
+			continue;
+		holder1 = i;
 	}
-	holder2 = j - 1;
-	total = holder1 + holder2;
-
+	if (s2 == NULL)
+		holder2 = 0;
+	else
+	{
+		for (j = 0; s2[j] != '\0'; j++)
+			continue;
+		holder2 = j;
+	}
+	total = holder1 + holder2 + 1;
 	new = malloc(sizeof(char) * total);
 	if (new == NULL)
-	{
-		return (0);
-	}
-
-	for (i = 0; s1[i] != '\0'; i++)
-	{
+		return (NULL);
+	for (i = 0; i <  holder1; i++)
 		new[i] = s1[i];
-	}
-
-	for (j = 0; s2[j] != '\0' && i; j++)
-	{
-		new[holder1] = s2[j];
-		holder1++;
-	}
+	for (j = 0; j < holder2; j++)
+		new[i + j] = s2[j];
+	new[holder1 + holder2] = '\0';
 	return (new);
 }
