@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (n >= holder2)
 		n = holder2;
-	total = holder1 + n;
+	total = holder1 + n +1;
 	m = malloc(total);
 	for (i = 0; i < holder1; i++)
 		m[i] = s1[i];
